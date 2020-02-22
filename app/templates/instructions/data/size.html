@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tab text</title>
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+
+<body>
+<header class="container-fluid bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-light" href="#">
+            <img src="{{url_for('static', filename='images/logo.png')}}" width="30" height="30"
+                 class="d-inline-block align-top" alt="">
+            Quick-AI
+        </a>
+
+        <div class="navbar mr-auto">
+            <ul class="navbar-nav bg-dark">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="{{ url_for('home')}}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-bold" href="{{ url_for('instructions_main')}}">Instructions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="{{ url_for('ai_studio_main')}}">AI Studio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="{{ url_for('reports_main')}}">Report</a>
+                </li>
+            </ul>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+</header>
+
+<div class="row">
+    <div id="sidebar-container" class="sidebar-expanded col-2 d-none d-lg-block bg-light">
+        <ul class="navbar-nav text-dark ml-4">
+            <li class="nav-item text-dark">
+                <h5>
+                    <a class="nav-link text-dark mt-4 pb-0" href="{{ url_for('instructions_getting_started')}}">Getting started</a>
+                </h5>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav text-dark ml-4">
+            <li class="nav-item">
+                <h5>
+                    <a class="nav-link text-dark mt-0 pb-0" href="{{ url_for('instructions_data')}}">Data</a>
+                </h5>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark pt-0" href="{{ url_for('instructions_data_format')}}">
+                    Data format
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark pt-0" href="{{ url_for('instructions_data_types')}}">
+                    Data types
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold pt-0" href="#">
+                    Data size
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark pt-0" href="{{ url_for('instructions_data_cleaning')}}">
+                    Data cleaning
+                </a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav text-dark ml-4">
+            <li class="nav-item">
+                <h5>
+                    <a class="nav-link text-dark mt-0 pb-0" href="{{ url_for('instructions_aistudio')}}">AI Studio</a>
+                </h5>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav text-dark ml-4">
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+            <li class="nav-item">
+                <h1 class="nav-link text-dark mt-2 pb-0" href="#">
+
+                </h1>
+            </li>
+        </ul>
+
+    </div>
+    <div class="col-5">
+        <ul>
+            <li>
+                <h1>Data size</h1>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
+{# <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->#}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tab text</title>
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+
+<body>
+<header class="container-fluid bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-light" href="#">
+            <img src="{{url_for('static', filename='images/logo.png')}}" width="30" height="30"
+                 class="d-inline-block align-top" alt="">
+            Quick-AI
+        </a>
+
+        <div class="navbar mr-auto">
+            <ul class="navbar-nav bg-dark">
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-bold" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="{{ url_for('instructions_main')}}">Instructions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="{{ url_for('ai_studio_main')}}">AI Studio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="{{ url_for('reports_main')}}">Report</a>
+                </li>
+            </ul>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+</header>
+
+<div class="row">
+    <div class="col-5">
+        <ul>
+            <li>
+                <h1>Home content</h1>
+            </li>
+
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
+{# <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->#}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>
